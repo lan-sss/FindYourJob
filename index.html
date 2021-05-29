@@ -14,20 +14,21 @@
     <!--Подключили css и bootstap-grid (колонки) через link, здесь css- название папки, style.css - название файла. Готово-->
 </head>
 <body>
-  <header class="header">
-    <!--header.header+TAB. Header нужен для того, чтобы создать блок (в нашем случае это первая страница-шапка сайта, а с помощью атрибута class="header" я смогу его покрасить, изменить стиль и т.д.)-->
+  <header class="header pb-5">
+    <!--header.header+TAB. Header нужен для того, чтобы создать блок (в нашем случае это первая страница-шапка сайта, а с помощью атрибута class="header" я смогу его покрасить, изменить стиль и т.д.) pb-5 отступ снизу 5 это Bootstrap-->
     <div class="container">
       <!--.container|c + TAB. Это класс в бутстрапе с помощью которого мы задаем рамки, за которые не будет вываливаться текст и картинки на сайте. -->
       <div class="row align-items-center py-3"> 
         <!--.row|c + TAB. Это строка, мы ее поделим на 3 равные части (Зачем? - смотри в макете header -> navbar - это лого, меню и регистрация)align-items-center выровнял все иконки по центру по горизонтали (в 1 строку) py-3 позволяет сделать отступ сверху и снизу (по оси игрек) на 3 пункта--> 
         <div class="col-2">
-          <!--.col*3 Класс col используется дл ятого, чтобы поделить строки row. Получается 3 дива с классом сol, дальше развернули их. col-2 знчит, что под логотип будет задейсствовано 2 колонки из 12 (см. макет)-->
+          <!--.col*3 Класс col используется дл ятого, чтобы поделить строки row. Получается 3 дива с классом сol, дальше развернули их. col-2 знчит, что под логотип будет задействовано 2 колонки из 12 (см. макет)-->
            <a href="" class="logo-link">
             <!--a.logo-link +TAB Это логотип - по сути это ссылка на главную страницу-->
              <img src="img/logo.svg" alt="logo: findyourjob">
             <!--alt показывает что показать, если логотип не загрузится-->
            </a>
         </div> 
+        <!-- /.col-2 -->
         <div class="col d-flex justify-content-center">
           <!--d-flex justify-content-center чтобы выровнять меню по центру-->
           <nav class="nav"> 
@@ -40,6 +41,7 @@
             </ul>
           </nav>
         </div>
+        <!-- /.col d-flex justify-content-center-->
         <div class="col-3 d-flex aligh-items-center justify-content-end"> 
           <!--d-flex aligh-items-center justify-content-end Это готовое решение Bootstrap, которое помогает выровнять по центру по горизонтали aligh-items-center и кнопки сместить вправо justify-content-end , соl-3 это 3 колонки под эти кнопки-->
           <a href="" class="button button-link">Войти</a> 
@@ -47,10 +49,120 @@
           <a href="" class="button button-primary">Регистрация</a> 
           <!--a.botton-primary +TAB-- Это тоже кнопки-->
         </div>
+        <!-- /.col-3 d-flex aligh-items-center justify-content-end -->
+        </div>
+      <!--/.row align-items-center py-3 -->
+      <div class="row pt-5"> 
+        <!-- pt-5 Это внутрений отсутп на 5рх. Не забывай row,иначе все поедет-->
+        <div class="col-5">
+          <h1 class="hero-title"> Найдите удаленную работу вашей мечты</h1>
+          <p class="hero-text"> Создайте резюме или отправьте отклик на вакансию в&nbsp;компании с мировым именем и работайте <br>по свободному графику</p>
+          <!--&nbsp; знак неразрывного пробела, br знак переноса-->
+          <div class="input-group d-flex">
+            <input type="text" class="input" placeholder="Начните поиск">
+            <!--Поле для ввода-->
+            <button class="button button-primary">
+              <img class="button-icon" src="img/search.svg" alt="icon: search" />
+              <span class="button-text">Искать вакансии</span>
+               <!--span - Это поле для текста-->
+             </button>
+          </div>
+          <!--/.input-group-->
+          <div class="tags-group">
+            <span class="tegs-label">Например:</span>
+            <a href="#" class="tag">Front-end</a>
+            <a href="#" class="tag">Back-end</a>
+            <a href="#" class="tag">Designer</a>
+          </div>
+          <!-- /.tags-group -->
+        </div>
+        <!-- / .row col-5 -->
+        <div class="col-6 offset-1">
+          <!--offset-1 Это отступ в 1 колонку-->
+          <img src="img/hero-image.svg" alt="image: people with laptops" class="hero-image" />
+        </div>
+        <!-- / .row col-6 offset-1 -->
       </div>
-      <!--/.row -->
+      <!-- / .row pt-5 -->
     </div>
     <!-- /.container -->
     </header>
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Категории</h2>
+        <!--.row>.col*6>a.card[href=#]>img.card-image+span.card-text-->
+        <div class="row align-items-center">
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#brush"></use>
+              </svg>
+              <span class="card-text">Дизайн</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <!--flex-column выровнять в 1 колонну-->
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#browser"></use>
+              </svg>
+              <span class="card-text">Разработка</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#edit"></use>
+              </svg>
+              <span class="card-text">Копирайтинг</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#fingerprint"></use>
+              </svg>
+              <span class="card-text">Безопасность</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#camera"></use>
+              </svg>
+              <span class="card-text">Видео</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+          <div class="col-2">
+            <a href="#" class="card d-flex flex-column align-items-center">
+              <svg height="24px" class="card-icon">
+                <use xlink:href="img/icons.svg#school"></use>
+              </svg>
+              <span class="card-text">Образование</span>
+              <!-- /.card-text --></a
+              >
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
  </body>
 </html>
