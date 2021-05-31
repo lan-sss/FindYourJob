@@ -24,13 +24,13 @@
           <!--.col*3 Класс col используется дл ятого, чтобы поделить строки row. Получается 3 дива с классом сol, дальше развернули их. col-2 знчит, что под логотип будет задействовано 2 колонки из 12 (см. макет)-->
            <a href="" class="logo-link">
             <!--a.logo-link +TAB Это логотип - по сути это ссылка на главную страницу-->
-             <img src="img/logo.svg" alt="logo: findyourjob">
+             <img src="img/logo.svg" alt="logo: FindYourJob">
             <!--alt показывает что показать, если логотип не загрузится-->
            </a>
         </div> 
         <!-- /.col-2 -->
         <div class="col d-flex justify-content-center">
-          <!--d-flex justify-content-center чтобы выровнять меню по центру-->
+          <!--d-flex чтобы выровнять меню по горизонтали justify-content-center чтобы выровнять меню по центру-->
           <nav class="nav"> 
             <!--nav.nav + TAB Это меню -->
             <ul class="menu d-flex"> 
@@ -58,6 +58,7 @@
           <h1 class="hero-title"> Найдите удаленную работу вашей мечты</h1>
           <p class="hero-text"> Создайте резюме или отправьте отклик на вакансию в&nbsp;компании с мировым именем и работайте <br>по свободному графику</p>
           <!--&nbsp; знак неразрывного пробела, br знак переноса-->
+          <form action="#" class="hero-form">
           <div class="input-group d-flex">
             <input type="text" class="input" placeholder="Начните поиск">
             <!--Поле для ввода-->
@@ -68,6 +69,7 @@
              </button>
           </div>
           <!--/.input-group-->
+          </form>
           <div class="tags-group">
             <span class="tegs-label">Например:</span>
             <a href="#" class="tag">Front-end</a>
@@ -92,7 +94,8 @@
         <h2 class="section-title">Категории</h2>
         <!--.row>.col*6>a.card[href=#]>img.card-image+span.card-text-->
         <div class="row align-items-center">
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
+            <!--col-12 col-sm-4 col-md-6 col-lg-2 Это адаптивность колонок под разные размеры экранов-->
             <a href="#" class="card d-flex flex-column align-items-center">
               <svg height="24px" class="card-icon">
                 <use xlink:href="img/icons.svg#brush"></use>
@@ -103,7 +106,7 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
             <a href="#" class="card d-flex flex-column align-items-center">
               <!--flex-column выровнять в 1 колонну-->
               <svg height="24px" class="card-icon">
@@ -115,7 +118,7 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
             <a href="#" class="card d-flex flex-column align-items-center">
               <svg height="24px" class="card-icon">
                 <use xlink:href="img/icons.svg#edit"></use>
@@ -126,7 +129,7 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
             <a href="#" class="card d-flex flex-column align-items-center">
               <svg height="24px" class="card-icon">
                 <use xlink:href="img/icons.svg#fingerprint"></use>
@@ -137,7 +140,7 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
             <a href="#" class="card d-flex flex-column align-items-center">
               <svg height="24px" class="card-icon">
                 <use xlink:href="img/icons.svg#camera"></use>
@@ -148,7 +151,7 @@
             <!-- /.card -->
           </div>
           <!-- /.col -->
-          <div class="col-2">
+          <div class="col-12 col-sm-4 col-md-6 col-lg-2">
             <a href="#" class="card d-flex flex-column align-items-center">
               <svg height="24px" class="card-icon">
                 <use xlink:href="img/icons.svg#school"></use>
@@ -164,5 +167,154 @@
       </div>
       <!-- /.container -->
     </section>
+    <section class="section offers">
+      <div class="container">
+        <h2 class="section-title">Свежие вакансии</h2>
+        <div class="offer d-flex align-items-center py-3">
+          <!--Некая обертка для блока оффера-->
+          <div class="offer-image"></div>
+          <div class="offer-title">
+            <h3 class="offer-heading">Front-end разработчик</h3>
+            <span class="offer-place">Технопарк, Казань</span>
+          </div>
+        <!-- /.offer-title -->
+         <span class="offer-salary">65 000 ₽</span>
+          <div class="tags-group">
+            <span class="tags-label">Требования:</span>
+            <a href="#" class="tag">React</a>
+            <a href="#" class="tag">Saas</a>
+            <a href="#" class="tag">Figma</a>
+          </div>
+          <!-- /.tags-group -->
+          <a href="#" class="more">Подробнее</a>
+        </div>
+        <!-- /.offer-->
+        <div class="offer d-flex align-items-center py-3">
+          <!--Некая обертка для блока оффера-->
+          <div class="offer-image"></div>
+          <div class="offer-title">
+            <h3 class="offer-heading">Front-end разработчик</h3>
+            <span class="offer-place">Технопарк, Казань</span>
+          </div>
+        <!-- /.offer-title -->
+         <span class="offer-salary">65 000 ₽</span>
+          <div class="tags-group">
+            <span class="tags-label">Требования:</span>
+            <a href="#" class="tag">React</a>
+            <a href="#" class="tag">Saas</a>
+            <a href="#" class="tag">Figma</a>
+          </div>
+          <!-- /.tags-group -->
+          <a href="#" class="more">Подробнее</a>
+        </div>
+        <!-- /.offer-->
+        <div class="offer d-flex align-items-center py-3">
+          <!--Некая обертка для блока оффера-->
+          <div class="offer-image"></div>
+          <div class="offer-title">
+            <h3 class="offer-heading">Front-end разработчик</h3>
+            <span class="offer-place">Технопарк, Казань</span>
+          </div>
+        <!-- /.offer-title -->
+         <span class="offer-salary">65 000 ₽</span>
+          <div class="tags-group">
+            <span class="tags-label">Требования:</span>
+            <a href="#" class="tag">React</a>
+            <a href="#" class="tag">Saas</a>
+            <a href="#" class="tag">Figma</a>
+          </div>
+          <!-- /.tags-group -->
+          <a href="#" class="more">Подробнее</a>
+        </div>
+        <!-- /.offer-->
+        <div class="offer d-flex align-items-center py-3">
+          <!--Некая обертка для блока оффера-->
+          <div class="offer-image"></div>
+          <div class="offer-title">
+            <h3 class="offer-heading">Front-end разработчик</h3>
+            <span class="offer-place">Технопарк, Казань</span>
+          </div>
+        <!-- /.offer-title -->
+         <span class="offer-salary">65 000 ₽</span>
+          <div class="tags-group">
+            <span class="tags-label">Требования:</span>
+            <a href="#" class="tag">React</a>
+            <a href="#" class="tag">Saas</a>
+            <a href="#" class="tag">Figma</a>
+          </div>
+          <!-- /.tags-group -->
+          <a href="#" class="more">Подробнее</a>
+        </div>
+        <!-- /.offer-->
+      </div>
+      <!-- /.container -->
+    </section>
+    <section class="section subscribe">
+      <div class="container">
+        <form class="subscribe-form">
+          <h2 class="subscribe-title">Подпишитесь на рассылку с новыми вакансиями</h2>
+          <p class="suscribe-subtitle">Мы отправляем по одному письму в&nbsp;неделю с&nbsp;подходящими вам вакансиями</p>
+          <div class="input-group d-flex">
+            <input type="text" class="input" placeholder="E-mail">
+            <!--Поле для ввода-->
+            <button class="button button-primary">
+              <img class="button-icon" src="img/Vector.svg" alt="icon: vector" />
+              <span class="button-text">Подписаться</span>
+              <!--span - Это поле для текста-->
+            </button>
+          </div>
+          <!--/.input-group-->
+        </form>
+        <!-- /.subscribe-form -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-3">
+            <img src="img/logo.svg" alt="logo: FindYourJob" class="footer-logo">
+            <p class="footer-description">Сайт с вакансиями для тех,<br />кто ищет удаленную работу</p>
+            <span class="footer-copyright">© 2021</span>
+          </div>
+          <!-- /.col-3 -->
+          <div class="col-3">
+            <h3 class="footer-title">Свяжитесь с нами</h3>
+            <!--ul.footer-list>li.footer-list-item>a.footer-list-link-->
+            <ul class="footer-list">
+              <li class="footer-list-item"><a href="tel:+78002020300" class="footer-list-link">8 800 20 20 300</a></li>
+              <li class="footer-list-item"><a href="mailto:info@findyourjob.net" class="footer-list-link">info@findyourjob.net</a></li>
+            </ul>
+          </div>
+          <!-- /.col-3 -->
+          <div class="col-3">
+            <h3 class="footer-title">Информация</h3>
+            <!--ul.footer-list>li.footer-list-item>a.footer-list-link-->
+            <ul class="footer-list">
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Обработка данных</a></li>
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Конфиденциальность</a>
+              </li>
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Публичная оферта</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.col-3 -->
+          <div class="col-3">
+            <h3 class="footer-title">Навигация по сайту</h3>
+            <!--ul.footer-list>li.footer-list-item>a.footer-list-link-->
+            <ul class="footer-list">
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Вакансии</a></li>
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Компании</a>
+              </li>
+              <li class="footer-list-item"><a href="#" class="footer-list-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <!-- /.col-3 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </footer>
  </body>
 </html>
